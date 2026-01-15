@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snakes and Ladder</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Snakes and Ladder</h1>
+    </div>
+
+    <div class="game-wrapper">
+        
+        <div class="board-container">
+            <img src="snake_ladder.png" alt="Board" class="board-img">
+            
+            <div id="p1" class="player"></div>
+            <div id="p2" class="player"></div>
+        </div>
+
+        <div class="controls">
+            <p id="tog">Red's Turn</p>
+            <div class="dice-display">
+                <p id="diceValue">0</p>
+            </div>
+            <button id="diceBtn">ROLL</button>
+        </div>
+
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+</html>

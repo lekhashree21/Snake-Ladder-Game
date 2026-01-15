@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.game-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+/* Board Style */
+.board-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: 5px solid #333;
+    background-color: white;
+}
+
+.board-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Player Styles */
+.player {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    transition: all 0.5s ease-in-out;
+    bottom: 0; /* Start position alignment */
+    left: 0;
+}
+
+#p1 {
+    background-color: red;
+    z-index: 10;
+}
+
+#p2 {
+    background-color: yellow;
+    z-index: 9;
+}
+
+/* Control Panel */
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#diceValue {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
